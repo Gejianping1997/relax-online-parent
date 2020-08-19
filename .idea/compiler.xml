@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="relax-framework-model" />
+        <module name="relax-framework-common" />
+        <module name="relax-online-parent" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="relax-framework-common" target="1.8" />
+      <module name="relax-framework-model" target="1.8" />
+      <module name="relax-online-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="relax-framework-common" options="-parameters" />
+      <module name="relax-framework-model" options="-parameters" />
+      <module name="relax-online-parent" options="-parameters" />
+    </option>
+  </component>
+</project>
